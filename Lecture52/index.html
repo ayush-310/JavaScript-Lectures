@@ -1,0 +1,119 @@
+<!-- JavaScript String Methods Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript String Methods Tutorial</h3>
+    <p>What is string and example?
+        Strings are used for storing text/characters. For example, "Hello World" is a string of characters. Unlike many
+        other programming languages, C does not have a String type to easily create string variables.</p>
+    <p>
+        var x = "Ayush Is Smart"
+    </p>
+    <script>
+        // 1
+        var x = "Welcome to Code4Education";
+        var y = x.length;
+        document.write(y);
+
+        document.write("<br><br>");
+
+        //    2
+        var y = x.toLowerCase();
+        document.write(y);
+
+        document.write("<br><br>");
+
+        //    3
+        var y = x.toUpperCase();
+        document.write(y);
+
+        document.write("<br><br>");
+
+
+
+        //    4
+        var y = x.includes("to");
+        document.write(y);
+        //    true 
+        var y = x.includes("To");
+        document.write(y);
+        // false 
+        document.write("<br><br>");
+
+
+        //    5
+        var y = x.startsWith("Wel");
+        document.write(y);
+        //    true 
+        var y = x.includes("wel");
+        document.write(y);
+        // false 
+        document.write("<br><br>");
+
+
+        //    6
+        var y = x.endsWith("Code4Education");
+        var y = x.endsWith("ion");
+        document.write(y);
+        //    true 
+        var y = x.endsWith("CodeEducation");
+        document.write(y);
+        // false 
+        document.write("<br><br>");
+
+
+        //    7
+        var y = x.search("to");
+        document.write(y);
+        //    8
+        var y = x.search("To ");
+        document.write(y);
+        // -1
+        document.write("<br><br>");
+
+        
+        //    8
+        var y = x.match(/to/g);
+        // conerts it to array 
+        document.write(y);
+        document.write("<br><br>");
+
+         
+        //    9
+        var y = x.indexOf("to");
+        // conerts it to array 
+        document.write(y);
+        document.write("<br><br>");
+
+        //    10
+        var y = x.lastIndexOf("to");
+        document.write(y);
+        document.write("<br><br>");
+
+        //    11
+        var y = x.replace("Code4Education" , "JavaScript");
+        document.write(y);
+        document.write("<br>");
+        var y = x.replace(/to/g , "JavaScript");
+        document.write(y);
+        document.write("<br><br>");
+
+        //    12
+        var x = "   Code4Education    ";
+        var y = x.trim();
+        console.log(y);
+        document.write("<br>");
+       
+
+
+    </script>
+</body>
+
+</html>

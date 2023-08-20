@@ -1,0 +1,59 @@
+<!-- JavaScript Modify & Delete Array  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Modify & Delete Array </h3>
+    <br>
+    <h4>Modify Array</h4>
+    <p>JavaScript gives you several ways to modify arrays. The first way is to give an existing array element a new
+        value. This is as easy as assigning the value. </p>
+    <p>eg:
+        var x = ["Ram", 17,"Male", 12];
+        <br>
+        var x[1] = 19;
+    </p>
+
+    <h4>Delete Array</h4>
+    <p>This method deletes the element at the index specified, This means that at the place of the deleted index, the
+        element is left undefined or null.</p>
+        <p>
+            eg:
+            var x = ["Ram", 17,"Male", 12];
+            <br>
+            delete x[1];
+        </p>
+
+    <script>
+        // Modification
+        document.write("Modification" + "<br>");
+
+         var x = ["Ram", 17,"Male", "BCA"];
+         document.write(x + "<br>");
+
+         x[3] = "BTech";
+         document.write(x + "<br>");
+
+         document.write("<br>");
+
+        // Deletion
+         document.write("Deletion" + "<br>");
+
+        var x = ["Ram", 17,"Male", "BCA"];
+         document.write(x + "<br>");
+
+         delete x[3] ;
+         document.write(x + "<br>");
+         document.write(x[3] + "<br>");
+         document.write(x.length + "<br>");
+
+    </script>
+</body>
+
+</html>

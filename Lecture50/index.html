@@ -1,0 +1,55 @@
+<!-- JavaScript For In Loop Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> JavaScript For In Loop Tutorial</h3>
+    <p>
+        For-in loop in JavaScript is used to iterate over the properties of an object. It can be a great debugging tool
+        if we want to show the contents of an object. The for-in loop iterates only over those keys of an object which
+        have their enumerable property set to “true”.
+    </p>
+    <p>
+        for(variable in object){
+        stetements
+        }
+    </p>
+    <script>
+
+        var object = {
+            fname: 'Ayush',
+            lname: 'Srivastava',
+            age: '21',
+            mail: 'info@example.com',
+        }
+        // 1
+        document.write(1+ ")<br>")
+        for (var key in object) {
+            document.write(object[key] + "<br>")
+        }
+        
+        document.write("<br>")
+        
+        // 2
+        document.write(2 + ")<br>")
+        for (var key in object) {
+            document.write(key + " : " + object[key] + "<br>")
+        }
+        
+        document.write("<br>")
+        
+        // 3
+        document.write(3 + ")<br>")
+        for (var key in object) {
+            document.write(object + "<br>")
+        }
+    </script>
+</body>
+
+</html>

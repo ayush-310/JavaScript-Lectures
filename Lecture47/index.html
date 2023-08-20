@@ -1,0 +1,59 @@
+<!-- JavaScript Objects Tutorial In Hindi | -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> JavaScript Objects Tutorial In Hindi |</h3>
+    <p>
+        An object is a collection of properties, and a property is an association between a name (or key) and a value. A
+        property's value can be a function, in which case the property is known as a method. Objects in JavaScript, just
+        as in many other programming languages, can be compared to objects in real life.
+    </p>
+    <p>
+        eg : var object_name = {
+
+        key_name : value,
+
+        }
+    </p>
+    <script>
+        var x = {
+            fname: 'Ayush',
+            lname: 'Gupta',
+            age: 25,
+            email: 'example@gmail.com',
+            name: ['Ram', 'Harry', 'Amit'],
+            salary: function () {
+                return 30000;
+            },
+            fullname: function () {
+                return this.fname + " " + this.lname + " " + this.age;
+            },
+            living: {
+                    'city' : 'Delhi',
+                    'country': 'India'
+            }
+        }
+
+        // document.write(x + "<br><br>")
+        console.log(x);
+
+        document.write(x.fname + " " + x.lname + " " + "<br><br>")
+        document.write(x.age + " " + "<br><br>")
+        document.write(x.name + " " + "<br><br>")
+        document.write(x.name[0] + " " + "<br><br>")
+        document.write(x.salary() + " " + "<br><br>")
+        document.write(x.fullname() + " " + "<br><br>")
+        document.write(x.living.city + " " + "<br><br>")
+        document.write(x.living.country + " " + "<br><br>")
+
+    </script>
+</body>
+
+</html>

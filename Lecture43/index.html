@@ -1,0 +1,56 @@
+<!-- JavaScript Find & FindIndex Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> JavaScript Find & FindIndex Tutorial </h3>
+    <h4>FindIndex</h4>
+    <p>The findIndex() method is used when we want to specify a particular condition to that element</p>
+    <p>var x = [36,25,19,18]
+        <br>
+        var adult = 18
+        <br>
+        ages>=adult
+        <br>
+        findIndex(Function Name)
+    </p>
+
+    <h4>Find</h4>
+    <p>What is find () in JavaScript?
+        The find() method returns the value of the first element that passes a test. The find() method executes a
+        function for each array element. The find() method returns undefined if no elements are found.</p>
+    <p>var x = [36,25,19,18]
+        <br>
+        var adult = 18
+        <br>
+        ages>=adult
+        <br>
+        find(Function Name)
+    </p>
+    <script>
+        // find
+        var x = [36, 50, 112, 8]
+        var y = x.find(checkAdult);
+        document.write(y + "<br><br>")
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        document.write("<br>")
+
+        // findIndex
+        var x = [36, 50, 112, 18]
+        var y = x.findIndex(checkAdult);
+        document.write(y + "<br><br>")
+        function checkAdult(age) {
+            return age >= 18;
+        }
+    </script>
+</body>
+
+</html>

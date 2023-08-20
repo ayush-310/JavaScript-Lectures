@@ -1,0 +1,34 @@
+<!-- JavaScript Contains Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Contains Tutorial In Hindi</h2>
+    <p>The contains() method is used to find whether the specified node is a descendent of the given node. This
+        descendant can be a child, grandchild, great-grandchild, and so on.</p>
+    <p>node.contains(otherNode);</p>
+
+    <div id="test">
+        <h1>JavaScript contains</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor illum maxime harum voluptate excepturi.
+            Commodi nam, vero magni cumque reprehenderit ipsum ea qui magnam eum amet fuga eveniet quo vel ipsam odio
+            sapiente corrupti mollitia dolor alias! Libero, quae veniam numquam provident veritatis voluptatum voluptate
+            ullam, error dignissimos, dicta nam.</p>
+            <button type="button" class="btn" id="btn">Click me</button>
+            <div id="test1"></div>
+    </div>
+    <script>
+   var parentElement = document.getElementById("test")
+   var target = document.getElementById("btn")
+   var find = parentElement.contains(target)
+   console.log(find)
+    </script>
+</body>
+
+</html>

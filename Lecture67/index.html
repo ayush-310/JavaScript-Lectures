@@ -1,0 +1,45 @@
+<!-- JavaScript nextSibling & previousSibling Methods Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2> JavaScript nextSibling & previousSibling Methods </h2>
+    <section id="outer_div">
+        <h1>Outer Div</h1>
+        <div id="inner_div">
+            <h1>Inner Div</h1>
+            <div id="parent-element">
+                <div id="child-head">A</div>
+                <div>B</div>
+                <div id="child-c">C</div>
+                <div>D</div>
+                <div id="child-e">E</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var a = document.getElementById("child-c").nextElementSibling;
+        console.log(a);
+
+
+        var a = document.getElementById("child-c").previousElementSibling;
+        console.log(a);
+
+
+        var a = document.getElementById("child-c").nextElementSibling.style.backgroundColor = "red";
+        console.log(a);
+
+        var a = document.getElementById("child-c").previousElementSibling.style.backgroundColor = "red";
+        console.log(a);
+
+
+        var a = document.getElementById("child-head").previousElementSibling;
+        console.log(a);
+    </script>
+</body>
+</html>

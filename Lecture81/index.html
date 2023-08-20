@@ -1,0 +1,52 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Window Height & Width Tutorial </h2>
+
+    <script>
+        // Height 
+        window.onresize = resizeFunction;
+
+        function resizeFunction() {
+
+            console.clear();
+            
+            var iheight = window.innerHeight
+            console.log("InnerHeight " + iheight);
+
+
+            var oheight = window.outerHeight
+            console.log("OuterHeight " + oheight);
+
+        }
+
+
+        // Width 
+        window.onresize = resizeFunction;
+
+        function resizeFunction() {
+
+            console.clear();
+
+            var iWidth = window.innerWidth
+            console.log("InnerWidth " + iWidth);
+
+
+            var oWidth = window.outerWidth
+            console.log("OuterWidth " + oWidth);
+
+        }
+
+
+    </script>
+</body>
+
+</html>

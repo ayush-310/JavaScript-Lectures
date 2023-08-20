@@ -1,0 +1,40 @@
+<!-- JavaScript ForEach Loop Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript ForEach Loop Tutorial </h3>
+    <p>What is the use of forEach loop in JavaScript?
+        The forEach method is also used to loop through arrays, but it uses a function differently than the classic "for
+        loop". The forEach method passes a callback function for each element of an array together with the following
+        parameters: Current Value (required) - The value of the current array element.</p>
+    <p>
+        var x =["Ram","Aman"."Raghav"]
+        <br>
+        x.forEach(function(){
+        Statement
+        });
+    </p>
+    <script>
+        var x = ["Ram", "Aman", "Raghav"]
+         document.write(x + "<br><br>");
+        x.forEach(loop)
+        function loop(value) {
+            document.write(value + "<br><br>")
+        };
+
+        var x =["Ram","Aman","Raghav"]
+        x.forEach(function(value, index){
+            document.write(index + ":" + value + "<br><br>")
+
+        });
+    </script>
+</body>
+
+</html>

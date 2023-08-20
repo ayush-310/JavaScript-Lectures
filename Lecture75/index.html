@@ -1,0 +1,57 @@
+<!-- JavaScript Form Events Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Form Events Tutorial In Hindi</h2>
+    <p>A form event in JavaScript gets triggered when a user loses focus, or in a sense, the user wants to make
+        modifications to the form control value. Modification of the value includes a selection of any check box of the
+        form, making modifications on the opened form which has lost its focus or changing the typed text etc.</p>
+
+        <label for="">Name</label>
+        <input type="text" id="fname" onfocus="focusFunction(this)"  onblur="blurFunction(this)" oninput="inputFunction(this)"><br><br>
+
+
+        <label for="">Roll No</label>
+        <input type="text" id="rollno"  onfocus="focusFunction(this)"  onblur="blurFunction(this)"  oninput="inputFunction(this)"><br><br>
+
+        <label for="">Country</label>
+        <select  id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            <option value="">India</option>
+            <option value="">Pakistan</option>
+            <option value="">Bangladesh</option>
+            <option value="">Sri Lanka</option>
+            <option value="">Nepal</option>
+        </select>
+
+        <div id="inputOutput" style="border: 1px solid green; margin:10px"></div>
+    <script>
+        // Works only one time 
+    // function focusFunction(){
+    //     document.getElementById("fname").style.backgroundColor = "lime";
+    // }
+
+    // static to dynamic 
+    function focusFunction(element){
+        element.style.backgroundColor = "lime";
+    }
+
+    function blurFunction(element){
+        element.style.backgroundColor = "";
+    }
+
+
+    function inputFunction(element){
+       var store = element.value;
+       document.getElementById("inputOutput").innerHTML=store;
+    }
+    </script>
+</body>
+
+</html>

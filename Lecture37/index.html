@@ -1,0 +1,73 @@
+<!-- JavaScript Array Concat & Join Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Array Concat & Join Tutorial </h3>
+    <h4>Concat Array</h4>
+    <p>The concat() method is used to merge two or more arrays together. This method does not alter the original arrays
+        passed as arguments.</p>
+    <p> eg:
+        var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        var y = ["Riya","Diya","Amit"]
+        <br>
+        x.concat(y);
+    </p>
+    <br>
+    <h4>Join Array</h4>
+    <p>The join() method is used to join the elements of an array into a string. The elements of the string will be
+        separated by a spcified separator and its default calue is a comma(,).</p>
+    <p> eg:
+        var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        x.join("-");
+    </p>
+    <script>
+        // Shift Array
+         document.write("Concat Array" + "<br>")
+         var x = ["Ram","Arman","Raghav","Manav"]
+         var y = ["Riya","Diya","Amit"]
+         document.write(x + "<br>")
+         document.write("<br>")
+ 
+        //  Method 1
+        var y =  x.concat("Riya","Diya","Amit",12)
+        document.write(y + "<br>")
+        document.write("<br>")
+
+        // Method 2
+         var z = x.concat(y);
+         document.write(z + "<br>")
+         document.write("<br>")
+
+        //  Method 3
+         var a = [500,65,695];
+         var z = x.concat(a,y);
+         document.write(z + "<br>")
+         document.write("<br>")
+
+         document.write("<br>")
+         document.write("<br>")
+
+
+         // Join Array
+         document.write("Join Array" + "<br>")
+         var x = ["Ram","Arman","Raghav","Manav"]
+         document.write(x + "<br>")
+        //  var z = x.join(" / ");
+        //  var z = x.join(" - ");
+         var z = x.join(" <br> ");
+         document.write(z + "<br>")
+         document.write("<br>")
+
+    </script>
+</body>
+
+</html>

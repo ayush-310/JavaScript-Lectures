@@ -1,0 +1,73 @@
+<!-- JavaScript Arrays Tutorial In Hindi  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Arrays </h3>
+    <p>In JavaScript, array is a single variable that is use to store different elements. It is often used when we want
+        to store list of elements and access them by a single variable. Unlike most languages where array is a refrence
+        to the multiple variable , in JavaScript array is a single variable that stores multiple elements </p>
+        <p>eg : var x = [10,20,30];</p>
+        <br>
+        <br>
+        <h4>Implementation of Array</h4>
+         <p>eg: var x = new Array(); ---> Constructor Method </p>
+    <script>
+         
+        //  var hello = [10,20,"Amit",40,50];
+         var hello = [10,20,30,40,50];
+        //  document.write(hello);
+        //  document.write("<br> <br>");
+
+
+
+        //  for(var x=0; x<5; x++){
+        //     document.write(hello[x] + "<br>")
+        //  }
+        //  document.write("<br> <br>");
+
+
+
+        // //  Table form
+        // var sum = 0; 
+        //  document.write("<ul>");
+        //  for(var x=0; x<5; x++){
+        //     document.write("<li>" + hello[x] + "</li>");
+        //     sum = sum + hello[x];
+        //  }
+        //  document.write("</ul>");
+        //  document.write("Total Sum :" + sum);
+        //  document.write("<br> <br>");
+
+
+        var hello = new Array(2);
+
+        hello[0] = 10;
+        hello[1] = "Bhaskar";
+        hello[2] = true;
+        hello[3] = 40;
+        hello[4] = 50;
+        hello[5] = 60;
+        
+
+        for(var x=0; x<3; x++){
+            hello[x] = prompt("Enter the value :")
+        }
+
+        // for(var x = 0; x<=3; x++){
+        //     document.write(hello[x] + "<br>");
+        // }
+
+
+
+
+    </script>
+</body>
+
+</html>

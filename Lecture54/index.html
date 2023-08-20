@@ -1,0 +1,67 @@
+<!-- JavaScript Number Methods Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Number Methods </h3>
+    <script>
+        // 1
+        var x = "100";
+        var y = Number(x);
+        document.write(y);
+        document.write("<br><br>");
+
+        // 2
+        var x = "100.00";
+        var y = parseInt(x);
+        document.write(y);
+        document.write("<br><br>");
+
+        // 2
+        var x = "100.05";
+        var y = parseFloat(x);
+        document.write(y);
+        document.write("<br><br>");
+
+        // 3
+        var x = 10.55;
+        var x = "10.55";
+        var y = Number.isFinite(x);
+        document.write(y);
+        document.write("<br><br>");
+
+
+        // 4
+        var x = 10.55;
+        // var x = "10.55";
+        var y = Number.isInteger(x);
+        document.write(y);
+        document.write("<br><br>");
+
+
+        // 5
+        var x = 15.56483469;
+        // var x = "10.55";
+        var y = x.toFixed(2);
+        document.write(y);
+        document.write("<br><br>");
+
+
+        // 6
+        var x = 15.56483469;
+        var x = 15.46483469;
+        // var x = "10.55";
+        var y = x.toPrecision(2);
+        document.write(y);
+        document.write("<br><br>");
+
+    </script>
+</body>
+
+</html>

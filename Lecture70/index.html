@@ -1,0 +1,71 @@
+<!-- JavaScript insertAdjacentElement & insertAdjacentHTML Methods  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2>JavaScript insertAdjacentElement & insertAdjacentHTML Methods </h2>
+
+    <h4>insertAdjacentElement() </h4>
+    <p>insertAdjacentElement() method inserts the specified element at the specified position.
+        The legal values for this position are.
+    </p>
+    <h5>Syntax</h5>
+    <p>node.insertAdjacentElement(position,element)</p>
+
+
+    <h4>insertAdjacentHTML() </h4>
+    <p>The DOM insertAdjacentHTML() method is used to insert a text as HTML file to a specified position. This method is
+        used to change or add text as HTML. Return Value : This will return the page with the specified change. There
+        are four legal position values that can be used.
+    </p>
+    <h5>Syntax</h5>
+    <p>node.insertAdjacentHTML(specify-position,text-to-enter);</p>
+
+
+    <h4>insertAdjacentText() </h4>
+    <p>It provide text at one of the following
+
+    </p>
+    <ul>
+        <li>afterbegin</li>
+        <li>afterend</li>
+        <li>beforebegin</li>
+        <li>beforeend</li>
+    </ul>
+    <h5>Syntax</h5>
+    <p>node.insertAdjacentText(position,text);</p>
+
+    <div id="test">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat omnis magni quam praesentium tempore eum
+            maiores animi nisi alias numquam. lorem10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
+            quas?</p>
+    </div>
+    <script>
+        //  var newElement = document.createElement("h1");
+        //  var newText = document.createTextNode("This is just Text")
+
+        //  newElement.appendChild(newText);
+
+        //  var demo = document.getElementById("test")
+        //  demo.insertAdjacentElement("beforebegin",newElement);
+        //  demo.insertAdjacentElement("afterbegin",newElement);
+        //  demo.insertAdjacentElement("afterend",newElement);
+        //  demo.insertAdjacentElement("beforeend",newElement);
+
+
+        var demo = document.getElementById("test");
+
+        var newElement = "lorem"
+
+        ddemo.insertAdjacentText("beforeend",newElement)
+    </script>
+</body>
+
+</html>

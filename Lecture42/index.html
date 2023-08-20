@@ -1,0 +1,52 @@
+<!-- JavaScript Some & Every Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Some & Every </h3>
+    <h4>The every() array method in JavaScript is used to check if all the elements of the array satisfy the callback
+        function condition or not. </h4>
+    <p>var x = [36,25,19,18]
+        <br>
+        var adult = 18
+        <br>
+        evey()
+    </p>
+
+    <h4> The some() array method in JavaScript is used to check if at least one of the elements passes the callback test
+        or not.</h4>
+        <p>var x = [36,25,19,18]
+            <br>
+            var adult = 18
+            <br>
+            some()
+        </p>
+        <script>
+            // some 
+            var x = [36,5,1,18]
+            document.write(x + "<br><br>")
+            var y = x.some(checkAdult);
+            document.write(y + "<br><br>")
+            function checkAdult(x){
+                return x >=18;
+            }
+
+            // every 
+            var x = [36,50,112,18]
+            var y = x.every(checkAdult);
+            document.write(y + "<br><br>")
+            function checkAdult(x){
+                return x >=18;
+            }
+
+
+        </script>
+</body>
+
+</html>

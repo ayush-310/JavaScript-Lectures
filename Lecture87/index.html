@@ -1,0 +1,42 @@
+<!-- JavaScript History Object Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript History Object Tutorial</h2>
+    <p>The JavaScript history object represents an array of URLs visited by the user. By using this object, you can load
+        previous, forward or any particular page. The history object is the window property, so it can be accessed by:
+        window. history.</p>
+
+        <button onclick="backFunction">Back</button>
+        <button onclick="forwardFunction">Forward</button>
+
+
+        <button onclick="goFunction">Go Button</button>
+    <script>
+        function backFunction(){
+            history.back();
+        }
+
+
+        function forwardFunction(){
+            history.forward();
+        }
+
+        function goFunction(){
+            // go forward 
+            history.go(1);
+
+            // go backward 
+            history.go(-1);
+        }
+    </script>
+</body>
+
+</html>

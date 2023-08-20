@@ -1,0 +1,89 @@
+<!-- JavaScript classList Methods Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo_1 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript classList Methods </h2>
+    <header id="header" class="header_title " style="border: 5px solid black;">
+        <h1>Code4Education</h1>
+    </header>
+    <script>
+        // 1
+        // document.getElementById("header").classList.add("demo_1", "demo_2", "demo_3");
+        // var header = document.getElementById("header").classList;
+        // console.log(header);
+
+
+        // 2
+        document.getElementById("header").classList.remove("demo_1");
+        var header = document.getElementById("header").classList;
+        console.log(header);
+
+
+        // 3
+        document.getElementById("header").addEventListener("click", demo);
+
+        function demo() {
+
+            document.getElementById("header").classList.add("demo_1");
+            var header = document.getElementById("header").classList;
+            console.log(header);
+        }
+
+        // 4
+        document.getElementById("header").addEventListener("click", demo);
+
+        function demo() {
+
+            // document.getElementById("header").classList.add("demo_1");
+            var header = document.getElementById("header").classList.length;
+            console.log(header);
+        }
+
+
+        // 5
+        document.getElementById("header").addEventListener("click", demo);
+
+        function demo() {
+
+            document.getElementById("header").classList.toggle("demo_1");
+            var header = document.getElementById("header").classList;
+            console.log(header);
+        }
+
+
+        // 6
+        document.getElementById("header").addEventListener("click", demo);
+
+        function demo() {
+
+            // document.getElementById("header").classList.toggle("demo_1");
+            var header = document.getElementById("header").classList.item(0);
+            console.log(header);
+        }
+
+
+        // 7
+        document.getElementById("header").addEventListener("click", demo);
+
+        function demo() {
+
+            // document.getElementById("header").classList.toggle("demo_1");
+            var header = document.getElementById("header").classList.contains("demo_1");
+            console.log(header);
+        }
+    </script>
+</body>
+
+</html>

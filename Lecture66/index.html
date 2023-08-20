@@ -1,0 +1,54 @@
+<!-- JavaScript FirstChild & LastChild Methods Tutorial In Hindi  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2>JavaScript FirstChild & LastChild Methods </h2>
+    <section id="outer_div">
+        <h1>Outer Div</h1>
+        <div id="inner_div">
+            <h1>Inner Div</h1>
+            <div id="parent-element">
+                <div>A</div>
+                <div>B</div>
+                <div id="child-c">C</div>
+                <div>D</div>
+                <div>E</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var a = document.getElementById("outer_div").firstElementChild;
+        console.log(a);
+
+        var a = document.getElementById("outer_div").lastElementChild;
+        console.log(a);
+
+        var a = document.getElementById("outer_div").firstElementChild.style.backgroundColor = "red";
+        console.log(a);
+
+        document.getElementById("outer_div").lastElementChild.style.backgroundColor = "orange";
+        var a = document.getElementById("outer_div").lastElementChild;
+        console.log(a);
+
+
+        var a = document.getElementById("outer_div").firstChild;
+        console.log(a);
+
+        var a = document.getElementById("outer_div").childNodes;
+        console.log(a);
+
+
+        var a = document.getElementById("parent-element").firstChild;
+        console.log(a);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!-- JavaScript HasAttribute & HasChildNodes Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript HasAttribute & HasChildNodes Tutorial</h2>
+    <h4>HasAttribute</h4>
+    <p>hasAttribute() method returns a Boolean value indicating whether the specified element has the specified
+        attribute or not.</p>
+    <p>hasAttribute(name) </p>
+
+    <h4>HasChildNodes</h4>
+    <p>The hasChildNodes() method of the Node interface returns a boolean value indicating whether the given Node has
+        child nodes or not.</p>
+    <p>hasChildNodes() </p>
+
+    <div id="test" class="demo">
+        <h1>ayush</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quae a sed autem id iste explicabo assumenda
+            unde facilis dolores.</p>
+            <button type="button" class="btn" id="btn">Click Me</button>
+    </div>
+    <script>
+       var target = document.getElementById("test");
+    //    var find = target.hasAttribute("class")
+       var find = target.hasChildNodes()
+       console.log(find)
+    </script>
+</body>
+
+</html>

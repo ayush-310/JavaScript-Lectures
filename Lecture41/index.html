@@ -1,0 +1,35 @@
+<!-- JavaScript Includes Method Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Includes Method Tutorial </h3>
+    <p>The includes() method returns true if a string contains a specified string. Otherwise it returns false . The
+        includes() method is case sensitive.</p>
+    <p> var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        includes("Search Item");
+        includes("Ram"); --> true
+        includes("ram"); --> false
+
+    </p>
+    <script>
+        var x = ["Ram", "Arman", "Raghav", "Manav"]
+    //    true 
+      var y =  x.includes("Ram"); 
+      document.write(y);
+      document.write("<br>");
+    //   false 
+      var y =  x.includes("ram");
+      document.write(y);
+
+    </script>
+</body>
+
+</html>

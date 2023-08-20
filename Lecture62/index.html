@@ -1,0 +1,104 @@
+<!-- JavaScript addEventListener Method Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2>JavaScript addEventListener Method Tutorial </h2>
+
+    <h4>DOM Normal Function</h4>
+    <p>Document.getElementByid(ID).onclick = functionName;</p>
+
+    <h4>DOM addEventListener Methods:</h4>
+    <p>Document.getElementByid(ID).addEventListener("click",functionName);</p>
+    <p>Document.getElementByid(ID).addEventListener("click",function(){
+        <br>
+        statement;
+        <br>
+        });
+    </p>
+
+    <h4>DOM removeEventListener Methods:</h4>
+    <p>Document.getElementByid(ID).removeEventListener("click",functionName);</p>
+    <p>Document.getElementByid(ID).removeEventListener("click",function(){
+        <br>
+        statement;
+        <br>
+        });
+    </p>
+    <header id="header" class="header_title" style="border: 5px solid black;">
+        <h1>Code4Education</h1>
+    </header>
+
+    <!-- box section  -->
+    <section id="outer_div">
+        <h1>Outer Div</h1>
+        <div id="inner_div">
+            <h1>Inner Div</h1>
+        </div>
+    </section>
+
+    <script>
+        // 1
+        // document.getElementById("header").onclick= backgroundColor;
+
+        // function backgroundColor(){
+        //     document.getElementById("header").style.backgroundColor = "yellow";
+        // } 
+
+        // 2
+        // document.getElementById("header").onmouseenter= backgroundColor;
+
+        // function backgroundColor() {
+        //     document.getElementById("header").style.backgroundColor = "yellow";
+        // } 
+
+
+        // 3
+        // document.getElementById("header").addEventListener("click",backgroundColor);
+
+        // function backgroundColor() {
+        //     document.getElementById("header").style.backgroundColor = "yellow";
+        // } 
+
+
+        // 4
+        // document.getElementById("header").addEventListener("click", function () {
+        //     document.getElementById("header").style.border = "20px dotted green";
+        // });
+
+
+        // 5
+        document.getElementById("outer_div").addEventListener("click", function () {
+            alert("Welcome to Outer Div");
+        },true);
+        document.getElementById("inner_div").addEventListener("click", function () {
+            alert("Welcome to Inner Div");
+        },true);
+
+
+        // 6
+        document.getElementById("header").addEventListener("mouseleave", demo );
+        document.getElementById("header").addEventListener("click", remove );
+       
+        function demo() {
+            document.getElementById("header").style.backgroundColor = "yellow";
+        } 
+
+
+        function remove() {
+            document.getElementById("header").removeEventListener("mouseleave" , demo);
+        } 
+
+
+
+    </script>
+</body>
+
+</html>

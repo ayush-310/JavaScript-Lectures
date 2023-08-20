@@ -1,0 +1,52 @@
+<!-- JavaScript Array Shift & Unshift Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Array Shift & Unshift Tutorial</h3>
+    <h4>Shift Array</h4>
+    <p>The shift() method removes the first element of the array tus reducing the size of the original array by 1.</p>
+    <p> eg:
+        var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        x.shift();
+    </p>
+    <br>
+    <h4>Unshift Array</h4>
+    <p>The unshift() method is used to add one or more elements to the beginning of the given array. This function
+        increases the length of the existing array by the number of elements added o the array.</p>
+    <p> eg:
+        var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        x.unshift();
+    </p>
+    <script>
+         // Shift Array
+         document.write("Shift Array" + "<br>")
+         var x = ["Ram","Arman","Raghav","Manav"]
+         document.write(x + "<br>")
+         x.shift();
+
+
+         document.write("<br>")
+         document.write("<br>")
+
+
+         // Unshift Array
+         document.write("Unshift Array" + "<br>")
+         var x = ["Ram","Arman","Raghav","Manav"]
+         document.write(x + "<br>")
+         x.unshift("Ayush");
+         x.unshift("Ayush","Shiv");
+         document.write(x + "<br>")
+
+    </script>
+</body>
+
+</html>

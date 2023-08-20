@@ -1,0 +1,44 @@
+<!-- JavaScript parentElement & parentNode Methods Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2>JavaScript parentElement & parentNode Methods </h2>
+    <img src="./Javascript-DOM-Navigation.webp" alt="">
+
+    <!-- Box section  -->
+    <section id="outer_div">
+        <h1>Outer Div</h1>
+        <div id="inner_div">
+            <h1>Inner Div</h1>
+            <div id="parent-element">
+                <div>A</div>
+                <div>B</div>
+                <div id="child-c">C</div>
+                <div>D</div>
+                <div>E</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // 1
+        var x = document.getElementById("outer_div").parentElement;
+        console.log(x);
+        var x = document.getElementById("inner_div").parentElement;
+        console.log(x);
+
+
+        // 2
+        var x = document.getElementById("child-c").parentNode;
+        console.log(x);
+    </script>
+</body>
+
+</html>

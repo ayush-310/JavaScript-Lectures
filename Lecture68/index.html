@@ -1,0 +1,47 @@
+<!-- JavaScript createElement & createTextNode Methods Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript createElement & createTextNode Methods </h2>
+    <h4>Create Element</h4>
+    <p>In Html document , the document.createElement() is a method used to create the HTMl element. The element
+        specified using elementName is created or an unknown HTMl element is created if the specified elementName is not
+        recognized.</p>
+    <h6>Syntax</h6>
+    <p>var element = document.createElement("elementName");</p>
+</body>
+
+
+<h4>CreateTextNode()</h4>
+<p>The createTextNode() method is used to create a TextNode which contains an element node and a text node. It is used
+    to provide text to an element. This method contains the text values as parameter which is of string type. Syntax:
+    document.createTextNode( text )</p>
+<h6>Syntax</h6>
+<p> document.createTextNode("text");</p>
+
+
+<h4>CreateComent</h4>
+<p>The createElement method of the document object is used to create HTML Elements, according to the specified tag. It
+    would be equivalent to the tag we write in the HTML file.</p>
+<h6>Syntax</h6>
+<p> document.createComment(text);</p>
+<script>
+     var element = document.createElement("p");
+     console.log(element);
+
+     var element =  document.createTextNode("text");
+     console.log(element);
+
+     var element =  document.createComment('comment');
+     console.log(element);
+</script>
+</body>
+
+</html>

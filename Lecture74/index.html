@@ -1,0 +1,39 @@
+<!-- JavaScript isEqualNode Tutorial In Hindi  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript isEqualNode Tutorial In Hindi </h2>
+    <p>The isEqualNode() method of the Node interface tests whether two nodes are equal. Two nodes are equal when they
+        have the same type, defining characteristics (for elements, this would be their ID, number of children, and so
+        forth), its attributes match, and so on.</p>
+
+        <ul  id="list1">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+
+        <ul id="list2">
+            <li>One</li>
+            <li>Two</li>
+        </ul>
+    <script>
+          var list1 = document.getElementById("list1")
+          var list2 = document.getElementById("list2")
+            
+          var equal = list1.isEqualNode(list2);
+
+          console.log(equal);
+    </script>
+</body>
+
+</html>

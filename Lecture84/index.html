@@ -1,0 +1,28 @@
+<!-- JavaScript Window resizeBy & resizeTo Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Window resizeBy & resizeTo Tutorial </h2>
+    <button type="button" onclick="openWindow()">Open Window</button>
+    <button type="button" onclick="resizeWindow()">Resize Window</button>
+
+    <script>
+        var myWindow
+        function openWindow() {
+            myWindow = window.open("", "", "width=600px , height=500px, height=500px,top=100px, left=100px");
+            myWindow.document.write("<p>This is my window</p>")
+        }
+
+        function resizeWindow() {
+          myWindow.resizeTo(400,400);
+          myWindow.resizeBy(400,400);
+        //   200+400,200+400
+        }
+    </script>
+</body>
+</html>

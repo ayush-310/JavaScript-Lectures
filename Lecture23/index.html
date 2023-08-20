@@ -1,0 +1,34 @@
+<!-- JavaScript Global & Local Variables  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> JavaScript Global & Local Variables </h3>
+    <h2>Local Variables</h2>
+    <p>When you use JavaScript, Local Variables are variables that are defined within functions. they have local scope, which means they can only be used withun the functions that define them.</p>
+
+    <h2>Global Variables</h2>
+    <p>In contrast, Global variables are variables that are defined outside of functions. These variables have global scope, so they can be used by any function without passing them to the function as parameters</p>
+
+
+    <script>
+ 
+    //    Local variable
+          function hello(){
+            var code = "Welcome to Code4ducation" + "<br>";
+            document.write(code);
+          }
+          hello();
+
+        //   Global Variable
+          var code = "Welcome to Code4ducation";
+          document.write(code);
+
+
+    </script>
+</body>
+</html>

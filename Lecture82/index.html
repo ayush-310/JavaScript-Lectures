@@ -1,0 +1,28 @@
+<!-- JavaScript Window Open & Close Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Window Open & Close Tutorial </h2>
+
+    <button type="button" onclick="openWindow()">Open Window</button>
+    <button type="button" onclick="closeWindow()">Close Window</button>
+
+    <script>
+        function openWindow() {
+            currentWindow = window.open("https://www.instagram.com/", "", "width=600px , height=500px, height=500px,top=100px, left=100px");
+        }
+
+        function closeWindow() {
+            currentWindow.close();
+        }
+    </script>
+</body>
+
+</html>

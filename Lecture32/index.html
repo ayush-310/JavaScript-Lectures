@@ -1,0 +1,51 @@
+<!-- JavaScript Multidimensional Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> JavaScript Multidimensional Arrays - 2D ARRAYS</h3>
+    <p>Multidimensional arrays in JavaScript is known as arrays inside another array. We need to put some arrays inside
+        an array , then the total thing is working like a multidimensional aray. To define a multidimensional array its
+        exactly the same as defining a normal one-dimensional array. </p>
+        <p> eg:
+            var x = [
+                      ["Ram",17,"Male",12],
+                      ["Rahul",20,"Male","B.A"],
+                      ["Maya",21,"Female","BCA"],
+                      ["Tanya",20,"Female","B.A"]
+                    ];
+        </p>
+    <script>
+           var hello = [
+                      ["Ram",17,"Male","B.Tech"],
+                      ["Rahul",20,"Male","B.A"],
+                      ["Maya",21,"Female","BCA"],
+                      ["Tanya",20,"Female","B.A"],
+                      ["Sanjana",20,"Female","B.A"],
+                      ["Srishti",20,"Female","B.A"]
+                    ];
+
+                document.write(hello.length);
+
+                document.write("<table border = '1px'>");
+                for(var x=0; x<hello.length; x++){
+
+                    document.write("<tr>");
+
+                    for(var y=0; y<hello[x].length; y++){
+                        document.write("<td>" + hello[x][y] + "</td>");  
+                    }
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+
+    </script>
+</body>
+
+</html>

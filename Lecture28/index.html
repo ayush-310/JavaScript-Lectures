@@ -1,0 +1,44 @@
+<!-- JavaScript Break & Continue Statement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JavaScript Break & Continue Statement</h3>
+    <h5>Break Statement</h5>
+    <p>The Break statement is used to jump out of a loop. It can be used to "jump out" of a switch() statement. It breaks the loop and continues executing the code after the loop.</p>
+
+    <h5>Continue Statement</h5>
+     <p>The continue statement "jumps over" one iteratin in the loop. It breaks iteration in the loop and continues executing the next iteration in the loop.</p>
+    <script>
+    
+    // break
+    for(var x=1; x<=10; x++){
+       if(x==4){
+           document.write("Count Me :" + x + "<br>")
+           break;
+       }
+       document.write("Number :" + x + "<br>")
+
+     }
+
+
+     document.write("<br>")
+
+
+    // continue
+    for(var x=1; x<=10; x++){
+       if(x==4){
+        //    document.write("Count Me :" + x + "<br>")
+           continue;
+       }
+       document.write("Number :" + x + "<br>")
+
+     }
+        
+    </script>
+</body>
+</html>

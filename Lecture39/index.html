@@ -1,0 +1,42 @@
+<!-- JavaScript IsArray Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Is Array </h3>
+    <h4>IsArray</h4>
+    <p>The isArray() method determines whether the value passed to this function is an array or not. This function
+        returns true if the argument passed is array else it returns false.</p>
+        <p> eg:
+            var x = ["Ram","Arman","Raghav","Manav"]
+            var y = 20;
+            <br>
+            isArray();
+        </p>
+    <script>
+        var x = ["Ram-0","Arman-1","Raghav-2","Manav-3"]
+
+        var y = 20;
+
+        var z = Array.isArray(x);
+        document.write(z + "<br><br>")
+
+        var z = Array.isArray(y);
+        document.write(z + "<br><br>")
+
+        if(Array.isArray(x)){
+            document.write("This is an array")
+        } else {
+            document.write("This is not an array")
+        }
+    </script>
+
+</body>
+
+</html>

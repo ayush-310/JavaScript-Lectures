@@ -1,0 +1,14 @@
+#outer_div{
+    width: 500px;
+    background-color: green;
+    color: white;
+    margin: 40px auto;
+    padding: 20px;
+}
+#inner_div{
+    width: 300px;
+    background-color: rgb(29, 7, 95);
+    color: white;
+    margin: 40px auto;
+    padding: 20px;
+}

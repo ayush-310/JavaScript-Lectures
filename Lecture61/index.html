@@ -1,0 +1,40 @@
+<!-- JavaScript DOM CSS Styling Methods Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JavaScript DOM CSS Styling Methods </h3>
+    <p>Style  </p>
+    <p>className  </p>
+    <p>classList  </p>
+    <header id="header" class="header_title" style="border: 5px solid black;">
+        <h1>Code4Education</h1>
+    </header>
+    <script>
+    //  New DOM CSS Styling 
+
+    var header = document.querySelector("#header")
+    console.log(header);
+
+    var header = document.querySelector("#header").style.border;
+    console.log(header);
+
+    var header = document.querySelector("#header").style.border = "10px dotted red";
+    console.log(header);
+
+    var header = document.querySelector("#header").style.backgroundColor = "yellow";
+    console.log(header);
+
+    var header = document.querySelector("#header").className = "main_header";
+    console.log(header);
+
+    var header = document.querySelector("#header").classList = "main_header xyz";
+    var headerClass = document.querySelector("#header").classList;
+    console.log(headerClass);
+    </script>
+</body>
+</html>

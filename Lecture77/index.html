@@ -1,0 +1,59 @@
+<!-- JavaScript CloneNode Tutorial In Hindi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list1{
+            height: 100px;
+            width: 150px;
+            background-color: aquamarine;
+            /* padding: 2px; */
+        }
+        #list2{
+            height: 100px;
+            width: 150px;
+            background-color: rgb(222, 179, 127);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript CloneNode </h2>
+    <p>The cloneNode() method in JavaScript makes a duplicate of the node object that is sent in and delivers the clone
+        node object. On the element you would like to copy, simply call the cloneNode() method. Pass true as an option
+        if you wish to copy the element's nested elements as well.</p>
+
+
+        <ul id="list1">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+
+        <ul id="list2">
+            <li>One</li>
+            <li>Two</li>
+        </ul>
+        <script>
+          var list1 = document.getElementById("list1").children[0];
+          console.log(list1);
+
+          var copyElement = list1.cloneNode(true);
+          console.log(copyElement);
+
+
+          var copyElement = list1.cloneNode(false);
+          console.log(copyElement);
+        //   console.log(list1);
+
+        document.getElementById("list2").appendChild(copyElement);
+        </script>
+</body>
+
+</html>

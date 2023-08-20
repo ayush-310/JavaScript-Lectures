@@ -1,0 +1,48 @@
+<!-- JavaScript IndexOf & LastIndexOf Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JavaScript IndexOf & LastIndexOf Tutorial</h3>
+    <h4>IndexOfArray</h4>
+    <p>The indexOf() method is used to find the index of the first occurrence of the search element provided as the argument to the function.</p>
+    <p> eg:
+        var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        indexOf("Search item" , start);
+    </p>
+    <br>
+    <h4>LastIndexOfArray</h4>
+    <p>The lastIndexOf() method is used to find the index of the last occurrence of the search element provided as the argument to the function.</p>
+    <p> eg:
+        var x = ["Ram","Arman","Raghav","Manav"]
+        <br>
+        indexOf("Search item" , start);
+    </p>
+    <script>
+       // IndexOfArray
+         document.write("IndexOfArray" + "<br>")
+         var x = ["Ram-0","Arman-1","Raghav-2","Arman-1"]
+         document.write(x + "<br>")
+         var y = x.indexOf("Arman-1" , 0);
+         document.write(y + "<br>")
+         var y = x.indexOf("Mohit" , 0);
+         document.write(y + "<br>")
+         document.write("<br>")
+
+
+       //LastIndexOfArray
+         document.write("LastIndexOfArray" + "<br>")
+         var x = ["Ram-0","Arman-1","Raghav-2","Arman-1"]
+         document.write(x + "<br>")
+         var y = x.lastIndexOf("Raghav-2" , 3);
+         document.write(y + "<br>")
+         var y = x.lastIndexOf("Mohit" , 0);
+         document.write(y + "<br>")
+    </script>
+</body>
+</html>

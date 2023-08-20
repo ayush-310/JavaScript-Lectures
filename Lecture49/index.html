@@ -1,0 +1,47 @@
+<!-- JavaScript Array Of Objects Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Array Of Objects Tutorial</h3>
+    <p>
+        The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential
+        collection of elements of the same type. An array is used to store a collection of data, but it is often more
+        useful to think of an array as a collection of variables of the same type.
+    </p>
+    <p>
+        var x = [
+        {name : 'Ram', age : 15}
+        ];
+    </p>
+    <script>
+        var x = [
+            { name: 'Ram', age: 15 },
+            { name: 'Amit', age: 25 },
+            { name: 'Ayush', age: 21 }
+        ];
+
+        console.log(x);
+
+        for (var y = 0; y < x.length; y++) {
+            document.write(x[y] + " " + x[y] + "<br>")
+
+        }
+        document.write("<br>")
+
+        for (var y = 0; y < x.length; y++) {
+            document.write(x[y].name + " " + x[y].age + "<br>")
+        }
+
+
+
+    </script>
+</body>
+
+</html>

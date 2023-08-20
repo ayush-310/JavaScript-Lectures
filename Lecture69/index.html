@@ -1,0 +1,58 @@
+<!-- JavaScript appendChild & InsertBefore Methods Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2>JavaScript appendChild & InsertBefore Methods </h2>
+    <h4>appendChild </h4>
+    <p>The appendChild() method of the Node interface adds a node to the end of the list of children of a specified
+        parent node. Note: If the given child is a reference to an existing node in the document, appendChild() moves it
+        from its current position to the new position.</p>
+    <h5>Syntax</h5>
+    <p>node.appendChild(node);</p>
+
+
+    <h4>InsertBefore</h4>
+    <p>If the given node already exists in the document, insertBefore() moves it from its current position to the new
+        position. (That is, it will automatically be removed from its existing parent before appending it to the
+        specified new parent.) This means that a node cannot be in two locations of the document simultaneously.</p>
+    <h5>Syntax</h5>
+    <p>node.insertBefore(newnode, existingnode);</p>
+
+    <div id="test">
+        <p>Hello Code4Education</p>
+        <h3>Bhaskar Gupta</h3>
+    </div>
+    <script>
+        var newElement = document.createElement("h2");
+
+        var newText = document.createTextNode("This is Just Text");
+
+        // var newComment = document.createComment("This is Just Text");
+
+        newElement.appendChild(newText);
+
+        document.getElementById("test").appendChild(newElement)
+
+        // to change the sequence
+        var target = document.getElementById("test");
+        var target = document.getElementById("test").childNodes;
+        // target.insertBefore(newElement,target.childNodes[1]);
+
+        console.log(target);
+
+        // console.log(newText);
+
+        // console.log(newComment);  
+
+    </script>
+</body>
+
+</html>

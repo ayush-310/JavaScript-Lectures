@@ -1,0 +1,65 @@
+<!-- JavaScript DOM querySelector & querySelectorAll Method Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript DOM querySelector & querySelectorAll Method Tutorial</h2>
+    <p>querySelector - document.querySelector(CSS Selector)</p>
+    <p>querySelectorAll - document.querySelectorAll(CSS Selector)</p>
+    <header id="header" class="header_title" style="border:5px solid black">
+        <h1>AYUSH</h1>
+    </header>
+    <ul>
+        <li><a href="#" class="article_li">Lorem ipsum dolor sit amet.</a></li>
+        <li><a href="#" class="article_li">Lorem ipsum dolor sit amet.</a></li>
+        <li><a href="#" class="article_li">Lorem ipsum dolor sit amet.</a></li>
+        <li><a href="#" class="article_li">Lorem ipsum dolor sit amet.</a></li>
+        <li><a href="#" class="article_li">Lorem ipsum dolor sit amet.</a></li>
+    </ul>
+    <script>
+        var header = document.querySelector("#header");
+        console.log(header);
+
+
+        var header = document.querySelector("#header").innerText;
+        console.log(header);
+
+
+        var header = document.querySelector("#header").innerHTML = "<h1>YO</h1>";
+        console.log(header);
+
+
+        var header = document.querySelector("#header").getAttribute("class");
+        console.log(header);
+
+        var header = document.querySelector("#header").getAttribute("style");
+        console.log(header);
+
+
+        var header = document.querySelector(".article_li").innerHTML;
+        console.log(header);
+
+        var header = document.querySelectorAll(".article_li");
+        console.log(header);
+
+        var header = document.querySelectorAll(".article_li")[4];
+        console.log(header);
+
+        var header = document.querySelectorAll(".article_li")[4].innerHTML;
+        console.log(header);
+
+        var header = document.querySelectorAll("ul");
+        console.log(header);
+
+        var header = document.querySelectorAll("ul")[0];
+        console.log(header);
+    </script>
+</body>
+
+</html>

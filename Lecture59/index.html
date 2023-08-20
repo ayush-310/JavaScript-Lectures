@@ -1,0 +1,65 @@
+<!-- JavaScript DOM Get & Set Methods Tutorial -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sample.js" type="JavaScript"></script>
+</head>
+<body>
+    <h3>JavaScript DOM Get & Set Methods </h3>
+    <header id="header" class="header_title" style="border: 2px solid black;">
+        <h1>Code4Education</h1>
+    </header>
+
+    <script>
+        var header = document.getElementById("header").innerText;
+        console.log(header);
+
+
+        var header = document.getElementById("header").innerHTML;
+        console.log(header);
+
+        var header = document.getElementById("header").getAttribute("class");
+        console.log(header);
+
+        var header = document.getElementById("header").getAttribute("style");
+        console.log(header);
+
+        var header = document.getElementById("header").getAttributeNode("style");
+        console.log(header);
+
+        var header = document.getElementById("header").attributes;
+        console.log(header);
+
+        var header = document.getElementById("header").attributes[1];
+        console.log(header);
+
+        var header = document.getElementById("header").innerHTML="<h1>Ayush</h1>";
+        console.log(header);
+
+        var header = document.getElementById("header").setAttribute("class","main_title");
+        var headerValue = document.getElementById("header").getAttribute("class");
+        console.log(headerValue);
+
+        var header = document.getElementById("header").setAttribute("style","border:10px dotted red; padding: 10px");
+        var headerValue = document.getElementById("header").getAttribute("style");
+        console.log(headerValue);
+
+        var header = document.getElementById("header").attributes;
+        var headerValue = document.getElementById("header").attributes[1].value = "Ayush_Srivastava";
+        console.log(header);
+        console.log(headerValue);
+
+        var header = document.getElementById("header").removeAttribute("class");
+        var headerBorder = document.getElementById("header").removeAttribute("style");
+        var headerClass = document.getElementById("header").getAttribute("class");
+        var headerNodes = document.getElementById("header").attributes;
+        // console.log(header);
+        console.log(headerNodes);
+
+         
+    </script>
+</body>
+</html>

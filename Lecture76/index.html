@@ -1,0 +1,56 @@
+<!-- JavaScript Form Events II Tutorial In Hindi  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Form Events II Tutorial In Hindi </h2>
+    <label for="">Name</label>
+    <input type="text" id="fname" onselect="selectFunction()" value="Ayush" required><br><br>
+
+    <form action=""  onsubmit="submitFunction()">
+        <label for="">Roll No</label>
+        <input type="text" id="rollno" onfocus="focusFunction(this)" onblur="blurFunction(this)"
+            oninput="inputFunction(this)" required oninvalid="alert('Please enter correct roll no')"><br><br>
+
+        <label for="">Country</label>
+        <select id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" onchange="changeFunction(this)">
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="submit"/>
+
+        <div id="inputOutput" style="border: 1px solid green; margin:10px"></div>
+    </form>
+
+    <script>
+        function changeFunction(element) {
+            var store = element.value;
+            document.getElementById("inputOutput").innerHTML = store;
+        }
+
+
+        function selectFunction(element) {
+            console.log("This is Select Method")
+        }
+
+
+        function submitFunction(element) {
+            var name = document.getElementById("fname").value;
+           alert("Success " + name)
+        }
+    </script>
+</body>
+
+</html>

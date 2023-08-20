@@ -1,0 +1,90 @@
+<!-- JavaScript Date Methods Tutorial  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>JavaScript Date Methods Tutorial </h3>
+    <p>In JavaScript, we can easily get the current date or time by using the new Date() object. By default, it uses our
+        browser's time zone and displays the date as a full text string, such as "Fri Jun 17 2022 10:54:59 GMT+0100
+        (British Summer Time)" that contains the current date, time, and time zone</p>
+    <p>
+        var x = new Date()
+    </p>
+    <script>
+        var now = new Date()
+        document.write(now);
+        document.write("<br><br>");
+
+
+        //    1
+        document.write(now.toDateString());
+        document.write("<br><br>");
+
+        //    2
+        document.write(now.getDate());
+        document.write("<br><br>");
+
+        //    3
+        document.write(now.getFullYear());
+        document.write("<br><br>");
+
+        //    4
+        // start from 0
+        document.write(now.getMonth());
+        document.write("<br><br>");
+
+        //    5
+        // start from sunday-0
+        document.write(now.getDay());
+        document.write("<br><br>");
+
+        //    6
+        document.write(now.getHours());
+        document.write("<br><br>");
+
+        //    7
+        document.write(now.getMinutes());
+        document.write("<br><br>");
+
+        //    8
+        document.write(now.getSeconds());
+        document.write("<br><br>");
+
+
+        //    9
+        document.write(now.getMilliseconds());
+        document.write("<br><br>");
+
+        //    10
+        now.setDate(25)
+        document.write(now);
+        document.write("<br><br>");
+
+        //    11
+        // now.setFullYear(2054)
+        document.write(now);
+        document.write("<br><br>");
+
+        //    12
+        // now.setMonth(2)
+        document.write(now);
+        document.write("<br><br>");
+
+        //    13
+        document.write(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
+        document.write("<br><br>");
+
+
+
+
+
+    </script>
+</body>
+
+</html>
